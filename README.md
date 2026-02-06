@@ -51,6 +51,17 @@ npm run build-storybook
 
 The built files will be in the `storybook-static` directory.
 
+#### Deployed Storybook
+
+The Storybook is automatically deployed to GitHub Pages on every push to the `main` branch.
+
+- **Live URL**: [https://design.jobhunter07.com](https://design.jobhunter07.com)
+
+The deployment is handled by a GitHub Actions workflow that:
+1. Builds the Storybook static site
+2. Deploys it to GitHub Pages
+3. Serves it from the custom domain
+
 ## Available Scripts
 
 - `npm run dev` - Start Next.js development server
