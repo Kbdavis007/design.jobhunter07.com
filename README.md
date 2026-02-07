@@ -59,8 +59,10 @@ The Storybook is automatically deployed to GitHub Pages on every push to the `ma
 
 The deployment is handled by a GitHub Actions workflow that:
 1. Builds the Storybook static site
-2. Deploys it to GitHub Pages
-3. Serves it from the custom domain
+2. Deploys it to GitHub Pages with the custom domain configuration
+3. The `public/` directory contains:
+   - `CNAME` file for custom domain configuration
+   - `.nojekyll` file to ensure GitHub Pages serves all files correctly
 
 ## Available Scripts
 
