@@ -23,10 +23,10 @@ const withJobHunterTheme: Decorator = (Story, context) => {
     '--jh-focus': palette.focus,
   } as React.CSSProperties;
 
-  return (
-    <div data-theme={mode} style={themeStyles}>
-      <Story />
-    </div>
+  return React.createElement(
+    'div',
+    { 'data-theme': mode, style: themeStyles },
+    React.createElement(Story)
   );
 };
 
