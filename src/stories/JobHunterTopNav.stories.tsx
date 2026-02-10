@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import React from 'react';
 
-import { JobHunterTopNav } from '../src/design/jobhunter07/TopNav';
+import { JobHunterTopNav } from '../design/jobhunter07/TopNav';
 
 const meta = {
   title: 'JobHunter07.com/Shell/Top Nav',

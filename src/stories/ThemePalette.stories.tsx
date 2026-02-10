@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { useGlobals } from '@storybook/preview-api';
 import React from 'react';
 
-import { theme } from '../src/design/tokens/theme';
+import { theme } from '../design/tokens/theme';
 
 type ThemeMode = keyof typeof theme;
 

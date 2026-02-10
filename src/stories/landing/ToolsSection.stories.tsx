@@ -1,11 +1,12 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 import { SiteChrome } from "../../src/components/chrome/SiteChrome";
-import { Hero } from "../../src/components/hero/Hero";
+import { ToolsSection } from "../../components/tools/ToolsSection";
+import { tools } from "../../data/landing";
 
-const meta: Meta<typeof Hero> = {
-  title: "Landing/Hero",
-  component: Hero,
+const meta: Meta<typeof ToolsSection> = {
+  title: "Landing/ToolsSection",
+  component: ToolsSection,
   decorators: [
     (Story) => (
       <SiteChrome>
@@ -18,6 +19,8 @@ const meta: Meta<typeof Hero> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Hero>;
+type Story = StoryObj<typeof ToolsSection>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  args: { tools },
+};

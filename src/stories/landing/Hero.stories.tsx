@@ -1,20 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import React from 'react';
 
-import { JobHunterPage } from '../src/design/jobhunter07/Page';
+import { HeroSection } from '../../design/jobhunter07/HeroSection';
 
 const meta = {
-  title: 'JobHunter07.com/Pages/Home',
-  component: JobHunterPage,
+  title: 'Landing/Hero',
+  component: HeroSection,
   parameters: {
     layout: 'fullscreen',
   },
-} satisfies Meta<typeof JobHunterPage>;
+} satisfies Meta<typeof HeroSection>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => <JobHunterPage />,
+  render: () => <HeroSection />,
 };
